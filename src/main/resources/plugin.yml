@@ -1,0 +1,22 @@
+name: AlamHeadsAPI
+version: 1.0.0
+main: me.alamgamer.alamheadsapi.AlamHeadsAPI
+api-version: "1.21"
+author: Alam Gamer
+description: HTTP API for player avatars using SkinsRestorer
+
+depend:
+  - SkinsRestorer
+
+commands:
+  alamheads:
+    description: AlamHeadsAPI commands
+    usage: /alamheads <reload|status|export|version>
+    permission: alamheads.admin
+    aliases:
+      - ah
+
+permissions:
+  alamheads.admin:
+    description: Allows using all AlamHeadsAPI commands
+    default: op
